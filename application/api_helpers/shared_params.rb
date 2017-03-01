@@ -18,6 +18,13 @@ class Api
       optional :born_on, type: String
     end
 
-
+    params :user_put do
+      requires :id, type: Integer
+      requires :first_name, type: String
+      requires :last_name, type: String
+      requires :email, type: String
+      requires :password, type: String
+      optional :born_on, type: String
+    end
   end
 end
