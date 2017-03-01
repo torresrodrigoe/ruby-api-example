@@ -17,7 +17,7 @@ class Api
         includes :user_post
       end
       post do
-        SEQUEL_DB[:users].insert(:first_name => 1, :last_name => 2, :email => 'torresrodr', :password => 'asdasd')
+        SEQUEL_DB[:users].insert(:first_name => params[:first_name], :last_name => params[:last_name], :email => params[:email], :password => params[:password], :born_on => params[:born_on], :created_at => DateTime.now)
       end
 
   end

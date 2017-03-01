@@ -15,7 +15,7 @@ class Api
       requires :last_name, type: String
       requires :email, type: String
       requires :password, type: String
-      optional :date_of_birth, type: String
+      optional :born_on, type: String
     end
 
 
